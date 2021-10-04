@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fixed text-white text-sn m-2 select-none">
+      <span>Score : </span><span id="scoreEl">0</span>
+    </div>
+    <div class="relative select-none text-2xl">
+      <span id="musicControl" class="absolute top-0 right-0 cursor-pointer"
+        >🔊</span
+      >
+    </div>
+    <canvas> </canvas>
+    <div class="fixed inset-0 flex items-center justify-center" id="modal">
+      <div class="bg-white max-w-md w-full p-6 text-center">
+        <h1 class="text-4xl font-bold leading-none" id="modal_score">0</h1>
+        <p class="text-sn text-gray-700 mb-4">Points</p>
+        <div>
+          <button
+            id="startGameBtn"
+            class="bg-blue-500 text-white w-full text-sn py-2 rounded-full"
+          >
+            Lets GO !!!!
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
